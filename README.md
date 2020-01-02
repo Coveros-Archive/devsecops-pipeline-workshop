@@ -1,31 +1,28 @@
 # devsecops-pipeline-workshop
-Code for Gene Gotimer's DevSecOps Pipeline Workshop.
+Instructions and code for Gene Gotimer's DevSecOps Pipeline Workshop.
 
 
 ## Prerequisites
 To participate in the workshop, you will need the following:
 
-* A Chef Manage account
-  * free for up to 5 nodes, which is enough for us
-
 * An AWS account
+  * We'll be working on a workstation in AWS for this workshop. 
+  * You'll also need to be able to create EC2 instances using the AWS API, so you'll need to have (or be able to create) an AWS Access Key ID and AWS Secret Access Key.
+
+* A Chef Manage account
+  * Chef Manage is free for up to 5 nodes, which is enough for this workshop.
+  * You'll need the `chef-starter.zip` with includes the private key for your Chef Manage account. 
 
 * A GitHub account
+  * You'll be forking a GitHub repository and making changes to it in your own account in order to trigger actions in the pipeline.
 
-* On your laptop
-  * Java 11
-  * Maven 3.1.1 or newer
-  * Chef Workstation (or ChefDK) installed and configured
+* An SSH client
+  * We will be using SSH to access the Ubuntu workstation we will be working from in AWS.
+    * PuTTY is a popular option for Windows, https://www.chiark.greenend.org.uk/~sgtatham/putty/.
+	* Git Bash has an SSH client included, https://gitforwindows.org/.
+	* If you use a Mac or Linux, you already have `ssh` installed.
+	
+* A web browser
 
-  
-## Before the workshop
-
-Make sure you are ready to fully participate and get the most out of the workshop by doing the following before the workshop begins.
-
-The target application that we will be building is at https://github.com/Coveros/gimme-feedback. **Fork** the repository to your GitHub account since you'll be making changes to it when exercising your DevSecOps pipeline. Then **clone** your repository to your laptop and build the `master` branch using Maven, `mvn verify`.
-
-Ensure the `knife` utility in Chef is configured correctly by getting a (probably empty) list of nodes on your Chef account, `knife node list`. If that fails, the Learn Chef Rally site can walk you through setting up Chef and `knife`. We'll be working with Ubuntu systems in AWS, so try https://learn.chef.io/modules/learn-the-basics/ubuntu/aws#/.
-
-Ensure your AWS credentials are available to `knife` by spinning up a 
-
-
+We will be building a pipeline in AWS that is Internet-accessible. I know it sounds like overkill to point this out, but your laptop needs to be able to access IP addresses in the public AWS space. If you use a VPN or if your network-access is restricted, please talk to your IT department to make sure you will be able to actively participate. Or bring a personal machine.
+	
