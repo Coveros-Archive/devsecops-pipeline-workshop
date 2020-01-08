@@ -4,7 +4,7 @@ Instructions and code for Gene Gotimer's Building a DevSecOps Pipeline workshop.
 
 ## Lesson 1: Assess the risks
 
-Visit our JPetStore target application at http://jpetstore.demo.secureci.com/.
+Visit our JPetStore target application at <http://jpetstore.demo.secureci.com/>.
 
 Click around, visit some links, try to accomplish something to get a feel for the app. Notice what looks polished, what doesn't, where sensitive data is collected and retrieved. *Get a feel for what might worry you once the application is pushed into production.*
 

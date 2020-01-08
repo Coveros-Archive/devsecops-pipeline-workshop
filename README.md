@@ -113,7 +113,7 @@ Add your name and email address to the global Git configuration.
 git config --global --edit
 ```
 
-When it is done, the Git global configuration file, `/home/ubuntu/.gitconfig`, should look like:
+When it is done, the Git global configuration file, `/home/ubuntu/.gitconfig`, should look similar to:
 
 ```ini
 # This is Git's per-user configuration file.

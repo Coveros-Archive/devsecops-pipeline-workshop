@@ -56,6 +56,8 @@ You will need the following information:
 * Connection user: username that Chef will log in as on the instance it launches.
   * `ubuntu` from the AWS Marketplace page for the AMI we are using.
 
+Your completed `knife ec2 server create` command will look similar to:
+
 ```shell
 knife ec2 server create \
   --node-name nexus --aws-tag Name=nexus \
