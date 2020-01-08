@@ -19,8 +19,8 @@ To participate in the workshop, you will need the following:
 
 * An SSH client
   * We will be using SSH to access the Ubuntu workstation we will be working from in AWS.
-    * PuTTY is a popular option for Windows, https://www.chiark.greenend.org.uk/~sgtatham/putty/.
-    * Git Bash has an SSH client included, https://gitforwindows.org/.
+    * PuTTY is a popular option for Windows, <https://www.chiark.greenend.org.uk/~sgtatham/putty/>.
+    * Git Bash has an SSH client included, <https://gitforwindows.org/>.
     * If you use a Mac or Linux, you already have `ssh` installed.
 
 * A web browser
@@ -48,7 +48,7 @@ We need to create a security group that allows `SSH`, `HTTP`, and `HTTPS` inboun
 
 Select **Review and Launch** and then **Launch**. Choose your key pair (or create a new one, so we can delete it later) and then **Launch Instance**. Make note of the key pair name for Lesson 2.
 
-While the EC2 instance is spinning up, configure your SSH client to use your private key for AWS, if needed. (For PuTTY, see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html). You'll need the private key again in Lesson 2.
+While the EC2 instance is spinning up, configure your SSH client to use your private key for AWS, if needed. (For PuTTY, see <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>). You'll need the private key again in Lesson 2.
 
 Once the system has launched, use the `IPv4 Public IP` or `Public DNS` to connect to the system with the username `ubuntu`.
 
@@ -86,7 +86,7 @@ Unzip the file with `unzip chef-starter.zip`. We just need the configuration fro
 ```shell
 ubuntu@ip-172-31-34-22:~$ unzip chef-starter.zip
 Archive:  chef-starter.zip
-  inflating: chef-repo/README.md     
+  inflating: chef-repo/README.md
 ...
   inflating: chef-repo/.chef/ggotimer.pem  
 ubuntu@ip-172-31-34-22:~$ mv chef-repo/.chef devsecops-pipeline-workshop/chef-repo/
@@ -126,7 +126,7 @@ When it is done, the Git global configuration file, `/home/ubuntu/.gitconfig`, s
 
 We'll be using a version of MyBatis JPetStore 6 as our application to develop. I have added the branches we'll need, but you need to *fork* the repository to your GitHub account since you'll be making changes to it when exercising your DevSecOps pipeline.
 
-Log into your GitHUb account and then visit https://github.com/Coveros/jpetstore-6. Click on the **Fork** button in the upper-right corner.
+Log into your GitHUb account and then visit <https://github.com/Coveros/jpetstore-6>. Click on the **Fork** button in the upper-right corner.
 
 Once the fork is complete, copy the URL from the **Clone or download** button and clone *your* fork to your home directory on the workstation.
 

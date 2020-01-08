@@ -47,7 +47,7 @@ You will need the following information:
   * Sonatype Nexus Repository Manager wants 2 CPUs and 8 GiB RAM, so we'll use `m5.large`.
 * AMI ID: what base image to use. **Must** be consistent with our region. AMD IDs are region-specific.
   * `ami-0d5d9d301c853a04a`, which is "Ubuntu Server 18.04 LTS (HVM), SSD Volume Type" in our region from the AWS Marketplace.
-* Security group ID: Firewall settings for the instance. These IDs are unique to each account and each region. 
+* Security group ID: Firewall settings for the instance. These IDs are unique to each account and each region.
   * *Security Group ID* that we created for our workstation (noted earlier) that allows `SSH`, `HTTP`, and `HTTPS` inbound traffic.
 * SSH Key name: name of the key pair that Chef will use to log in on the instance it launches.
   * *Key pair name* that we created in Lesson 0.
@@ -82,7 +82,7 @@ Note the public and private DNS names and IP addresses of the system. Visit it i
 
 ### 2.2: Visit the Chef Server
 
-Log into the Chef Server at https://manage.chef.io/. You should see the `nexus` node (what Chef calls the system) we just created. Click around for a while and notice all the information Chef has collected about the new node. The **Attributes** tab is particularly interesting.
+Log into the Chef Server at <https://manage.chef.io/>. You should see the `nexus` node (what Chef calls the system) we just created. Click around for a while and notice all the information Chef has collected about the new node. The **Attributes** tab is particularly interesting.
 
 ### 2.3: Configure Maven to use Nexus
 
