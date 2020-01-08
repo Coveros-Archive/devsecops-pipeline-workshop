@@ -55,7 +55,7 @@ git branch -D 42-add-jenkinsfile
 git push origin
 ```
 
-## 4.3: Configure Jenkins to find the GitHub repository
+### 4.3: Configure Jenkins to find the GitHub repository
 
 Visit Jenkins and click on the **New Item** link in the left-hand menu.
 
@@ -73,7 +73,7 @@ As when we did it locally, this  build may take a few minutes to build the OWASP
 
 Look at the job build results in Jenkins. Spend a few moments exploring the interface. In particular, the **Open Blue Ocean** option can show some interesting depictions of pipelines.
 
-## 4.4: Trigger builds automatically
+### 4.4: Configure the GitHub webhook
 
 While you could build on-demand after making code changes in the repository, we want Jenkins to notice the changes automatically. We can configure GitHub to tell Jenkins any time a change has been made to the repository.
 
