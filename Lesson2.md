@@ -10,7 +10,7 @@ In the AWS interface, look up the workstation information in the EC2 console. No
 
 Use your SSH client to upload your private key (e.g., `gotimer-workshop.pem`) that you created in Lesson 0 to your home directory on the workstation.
 
-On your workstation, go into the `devsecops-pipeline-workshop/chef-repo/` directory. Install and upload the `fast-client` and `nexus-repo` policies. 
+On your workstation, go into the `devsecops-pipeline-workshop/chef-repo/` directory. Install and upload the `fast-client` and `nexus-repo` policies.
 
 * `fast-client` sets Chef Client to "phone home" to the Chef Server about every 5 minutes. I often use this on development server because I am impatient.
 * `nexus-repo` installs Nexus Repository Manager running on Java 8 with an nginx proxy in front of it.
@@ -102,7 +102,7 @@ cd ~/jpetstore-6/
 mvn clean
 ```
 
-No errors is success. You should see the Maven plugins being downloaded from our Nexus Repo Manager. 
+No errors is success. You should see the Maven plugins being downloaded from your Nexus Repo Manager.
 
 If you visit Nexus again and browse the `maven-central` repository you will see many libraries have been proxied. The next time we need them, they will not have to be downloaded from the Internet again, only from our Nexus Repository.
 

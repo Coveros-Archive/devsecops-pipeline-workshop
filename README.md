@@ -95,7 +95,7 @@ ubuntu@ip-172-31-34-22:~$ ls -a devsecops-pipeline-workshop/chef-repo/
 ubuntu@ip-172-31-34-22:~$ rm -rf chef-repo
 ```
 
-Test our configuration by entering the `devsecops-pipeline-workshop/chef-repo/` directory (which is where we will be doing almost all our work) and running `knife client list`.
+Test our configuration by entering the `devsecops-pipeline-workshop/chef-repo/` directory and running `knife client list`.
 
 ```shell
 ubuntu@ip-172-31-34-22:~$ cd ~/devsecops-pipeline-workshop/chef-repo/
@@ -105,7 +105,24 @@ coveros-validator
 
 No errors is success.
 
-### 0.4: Fork and clone the application we are "developing"
+### 0.4: Configure Git
+
+Add your name and email address to the global Git configuration.
+
+```shell
+git config --global --edit
+```
+
+When it is done, the Git global configuration file, `/home/ubuntu/.gitconfig`, should look like:
+
+```ini
+# This is Git's per-user configuration file.
+[user]
+        name = Gene Gotimer
+        email = gene.gotimer@coveros.com
+```
+
+### 0.5: Fork and clone the application we are "developing"
 
 We'll be using a version of MyBatis JPetStore 6 as our application to develop. I have added the branches we'll need, but you need to *fork* the repository to your GitHub account since you'll be making changes to it when exercising your DevSecOps pipeline.
 
