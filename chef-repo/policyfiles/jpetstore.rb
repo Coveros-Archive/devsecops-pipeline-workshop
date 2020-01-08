@@ -17,7 +17,7 @@ run_list 'java::default', 'deploy-war::default', 'nginx-proxy::default'
 # Policyfile defined attributes
 default['java']['jdk_version'] = '11'
 default['deploy_war']['webapp'] = 'jpetstore'
-default['deploy_war']['url'] = 'http://18.217.119.180/repository/maven-releases/org/mybatis/jpetstore/6.0.3-CODEMASH/jpetstore-6.0.3-CODEMASH.war'
+default['deploy_war']['url'] = 'http://jenkinsip/job/jpetstore/job/master/lastSuccessfulBuild/artifact/target/jpetstore.war'
 default['nginx_proxy']['port'] = '8080'
 
 # Specify a custom source for a single cookbook:
