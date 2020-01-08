@@ -138,4 +138,16 @@ Cloning into 'jpetstore-6'...
 Resolving deltas: 100% (3491/3491), done.
 ```
 
+### 0.6: Generate a GitHub personal access token
+
+We'll be interacting with GitHub and we don't want to be spreading your GitHub password around. Plus, you *should* have two-factor authentication turned on, which won't work with most automated calls. So we'll create a *personal access token* to use instead of a password.
+
+Log into your GitHub account. Click on your icon in the upper-right corner and choose **Settings** from the drop-down menu. In the left-hand menu, choose **Developer settings**. In the new left-hand menu, choose **Personal access tokens**, and then click on the **Generate new token** button at the top of the page.
+
+Give a name to your token such as `codemash-2020` so you can find it later (to delete it). And then grant it the **repo** scope, which automatically includes the four scopes underneath it (**repo:status**, **repo_deployment**, **public_repo**, **repo:invite**). Then scroll to the bottom and click the green **Generate token** button.
+
+Copy the generated token and record it somewhere. You can never see it again if you leave this page, but you can just generate a new one.
+
+You will receive an email from GitHub warning that someone (in this case you) created a new person access token.
+
 ## Done
