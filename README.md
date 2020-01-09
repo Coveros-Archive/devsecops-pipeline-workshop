@@ -2,6 +2,8 @@
 
 Instructions and code for Gene Gotimer's Building a DevSecOps Pipeline workshop.
 
+[Presentation slides](https://drive.google.com/file/d/1-50Yp1V7c0lksP5MHfJ4cPvN90J0AxnF/view?usp=sharing)
+
 ## Prerequisites
 
 To participate in the workshop, you will need the following:
